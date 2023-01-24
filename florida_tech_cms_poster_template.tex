@@ -25,7 +25,7 @@
 \documentclass[landscape,a0paper,fontscale=0.42]{baposter} % Adjust the font scale/size here
 \usepackage{xcolor}
 \usepackage{graphicx} % Required for including images
-\graphicspath{{images/}} % Directory in which figures are stored
+\graphicspath{ {} } % Directory in which figures are stored
 \usepackage{amsmath} % For typesetting math
 \usepackage{amssymb} % Adds new symbols to be used in math mode
 \usepackage{adjustbox}
@@ -72,10 +72,10 @@
 	%textfont={\setlength{\parindent}{1.5em}}, % Uncomment for paragraph indentation
 	linewidth=2pt % Width of the border lines around content boxes
 }
-%----------------------------------------------------------------------------------------
-%	TITLE SECTION 
-%----------------------------------------------------------------------------------------
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	                                      TITLE 	   				  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 {\includegraphics[height=3.9cm]{FloridaTechNewLogo.png}} % First university/lab logo on the left
 {\bf\textsc{\Huge{YOUR TITLE HERE}}} % Poster title
 {\LARGE{\textsc{\underline{Presenter}, Second Author, ..., On behalf of the CMS Muon Group\\ Florida Institute of Technology}}\\
@@ -86,7 +86,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	                                     INTRODUCTION 									  %
+%	                                     INTRODUCTION 				  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \headerbox{Introduction}{name=objectives, column=0, row=0, span=2}{
@@ -105,17 +105,15 @@ Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Est pellentes
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	                                       BACKGROUND 									  %
+%	                                       BACKGROUND 				  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\headerbox{Background information}{name=background, column=0, row=3, span=2, below=objectives}{ % This block's bottom aligns with the bottom of the conclusion block
-% use ,bottomaligned=conclusion to align with conclusion block bottomaligned=acknowledgements
+\headerbox{Background information}{name=background, column=0, row=3, span=2, below=objectives}{ 
 \begin{multicols}{2}
 Integer feugiat scelerisque varius morbi enim nunc. Viverra vitae congue eu consequat. Dui accumsan sit amet nulla facilisi. Vitae auctor eu augue ut lectus arcu bibendum. Auctor augue mauris augue neque gravida in fermentum. Accumsan lacus vel facilisis volutpat. Semper eget duis at tellus at. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Maecenas pharetra convallis posuere morbi leo. At quis risus sed vulputate odio ut. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Lorem ipsum dolor sit amet. Aliquam nulla facilisi cras fermentum odio. Ac tortor dignissim convallis aenean et tortor. Ultricies mi quis hendrerit dolor magna eget est lorem. A cras semper auctor neque vitae tempus. Euismod lacinia at quis risus sed vulputate odio ut enim. Commodo odio aenean sed adipiscing diam donec. 
 \vspace{-0.2cm}
 
-%\vspace{1.4cm}
 \begin{center}
 \includegraphics[width=0.44\linewidth]{CMS_logo_May2014.pdf}\hspace{0.1cm}\includegraphics[width=0.44\linewidth]{CMS_logo_May2014.pdf}\\
 \captionof{figure}{Sample double column figure.}
@@ -126,7 +124,7 @@ Integer feugiat scelerisque varius morbi enim nunc. Viverra vitae congue eu cons
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	                                         METHODS 									  %
+%	                                         METHODS 				  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \headerbox{Methods}{name=frontend, column=0, row=4, span=2, below=background}{ 
@@ -153,8 +151,8 @@ Ac turpis egestas sed tempus urna et pharetra pharetra. At lectus urna duis conv
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	                                         RESULTS 									  %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-
+%	                                         RESULTS 				  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \headerbox{Results}{name=results, row=0, column=2,span=2}{ 
 
@@ -207,7 +205,7 @@ Congue eu consequat ac felis donec et odio pellentesque diam. Dignissim enim sit
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	                                   FUTURE WORK/PLANS 								  %
+%	                                   FUTURE WORK/PLANS 				  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \headerbox{Future work/Plans}{name=plans, column=2, row=3, span=2, below=results}{
@@ -218,7 +216,7 @@ Pretium lectus quam id leo. Porttitor lacus luctus accumsan tortor posuere ac ut
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	                                   ACKNOWLEDGEMENTS  								  %
+%	                                   ACKNOWLEDGEMENTS  				  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \headerbox{Acknowledgements}{name=acknowledgements,column=2, span = 1,below=plans}{
@@ -227,7 +225,7 @@ Porta non pulvinar neque laoreet suspendisse interdum consectetur. Id interdum v
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	                                      REFERENCES 									  %
+%	                                      REFERENCES 				  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \headerbox{References}{name=results2, column=3, span=1,below=plans, bottomaligned=acknowledgements}{ 
