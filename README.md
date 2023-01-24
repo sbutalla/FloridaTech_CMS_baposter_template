@@ -1,6 +1,5 @@
 # Florida Tech/CMS `baposter` LaTeX template
-The original baposter class (Version 1) was created by Brian Amberg (baposter@brian-amberg.de). LaTeX template for a conference poster
-presentation with Florida Tech and CMS Collaboration affiliation made by Stephen D. Butalla (stephen.butalla@cern.ch). Version 0, 2021/10/03.
+The original baposter class (Version 1) was created by Brian Amberg (baposter@brian-amberg.de).  Florida Tech and CMS Collaboration-style LaTeX template for a conference poster presentation made by Stephen D. Butalla (stephen.butalla@cern.ch). Version 0, 2021/10/03.
 
 If you want modify and/or distribute the class/template,
 please refer to the [CC BY-NC-SA 3.0 license](http://creativecommons.org/licenses/by-nc-sa/3.0/).
@@ -59,4 +58,4 @@ For multiple columns inside of the poster section, use the `multicols` environme
 
 \end{multicols}
 ```
-where `X` is the number of columns and `width` is the number of columns (e.g., `0.5\linewidth` for two columns, `0.33\linewidth` for three columns, etc.).
+where `X` is the number of columns and `width` is the width of an individual column (e.g., `0.5\linewidth` for two columns, `0.33\linewidth` for three columns, etc.).
