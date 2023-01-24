@@ -47,8 +47,8 @@ To wrap text, use the `\wrapfigure` environment:
   \end{center}
 \end{wrapfigure}
 ```
-The first argument of `\wrapfigure` is the location of the figure with respect to the wrapped text [`r` for placing the figure on the right (with text on the left),
-and `l`for placing the figure on the left (with text on the left)]. The second argument is the size of the text column.
+The first argument of `\wrapfigure` is the location of the figure with respect to the wrapped text---`r` for placing the figure on the right (with text on the left),
+and `l` for placing the figure on the left (with text on the left). The second argument is the size of the text column.
 
 ## Writing text/figures to multiple columns
 For multiple columns inside of the poster section, use the `multicols` environment, e.g.,
