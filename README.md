@@ -59,3 +59,6 @@ For multiple columns inside of the poster section, use the `multicols` environme
 \end{multicols}
 ```
 where `X` is the number of columns and `width` is the width of an individual column (e.g., `0.5\linewidth` for two columns, `0.33\linewidth` for three columns, etc.).
+
+# Typesetting
+There are issues with rendering the Florida Tech crimson color and associated accent color when typesetting on Overleaf. I'd recommend using [`TeXShop`](https://pages.uoregon.edu/koch/texshop/) if you are using macOS, or [`Gummi`](https://gummi.app/) for Linux. For the typesetting engine, the working version of `pdflatex` is 3.14159265-2.6-1.40.19 (in the TeX Live 2018 distribution). 
