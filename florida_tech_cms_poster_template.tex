@@ -1,0 +1,250 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% baposter Landscape Poster                                             %
+% LaTeX Template                                                        %
+% Version 1.0 (11/06/13)                                                %
+%                                                                       %
+% baposter Class Created by:                                            %
+% Brian Amberg (baposter@brian-amberg.de)                               %
+%                                                                       %
+% This template has been downloaded from:                               %
+% http://www.LaTeXTemplates.com                                         %
+%                                                                       %
+% License:                                                              %
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)   %
+%																		%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%																	%
+%%%%%%%%%%%%%%%%%% Florida Tech & CMS Poster Template %%%%%%%%%%%%%%%%%%%                                                      				%
+% Modified by Stephen D. Butalla for Florida Tech/CMS poster			%
+% presentations.														%
+% 2021/10/3  															%
+% stephen.butalla@cern.ch												%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[landscape,a0paper,fontscale=0.42]{baposter} % Adjust the font scale/size here
+\usepackage{xcolor}
+\usepackage{graphicx} % Required for including images
+\graphicspath{{images/}} % Directory in which figures are stored
+\usepackage{amsmath} % For typesetting math
+\usepackage{amssymb} % Adds new symbols to be used in math mode
+\usepackage{adjustbox}
+\usepackage{booktabs} % Top and bottom rules for tables
+\usepackage{enumitem} % Used to reduce itemize/enumerate spacing
+\usepackage{palatino} % Use the Palatino font
+\usepackage[labelfont=bf]{caption} % Required for specifying captions to tables and figures
+%\usepackage[font=small,labelfont=bf]{caption} % set figure captions fontsize
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{multicol} % Required for multiple columns
+\setlength{\columnsep}{1.5em} % Slightly increase the space between columns
+\setlength{\columnseprule}{0mm} % No horizontal rule between columns
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{slashed} % for Dirac slash notation
+\usepackage{tikz} % Required for flow chart
+\usetikzlibrary{shapes,arrows} % Tikz libraries required for the flow chart in the template
+
+\newcommand{\compresslist}{ % Define a command to reduce spacing within itemize/enumerate environments, this is used right after \begin{itemize} or \begin{enumerate}
+\setlength{\itemsep}{1pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+}
+
+\definecolor{FTRed}{RGB}{120,0,0} % Define Florida Tech crimson color
+\begin{document}
+
+\begin{poster}{
+	headerborder=closed, % Adds a border around the header of content boxes
+	colspacing=1em, % Column spacing
+	bgColorOne=white, % Background color for the gradient on the left side of the poster
+	bgColorTwo=white, % Background color for the gradient on the right side of the poster
+	borderColor=FTRed, % Border color
+	headerColorOne=FTRed, % Background color for the header in the content boxes (left side)
+	headerColorTwo=FTRed, % Background color for the header in the content boxes (right side)
+	headerFontColor=white, % Text color for the header text in the content boxes
+	boxColorOne=white, % Background color of the content boxes
+	textborder=roundedleft, % Format of the border around content boxes, can be: none, bars, coils, triangles, rectangle, rounded, roundedsmall, roundedright or faded
+	eyecatcher=true, % Set to false for ignoring the left logo in the title and move the title left
+	headerheight=0.1\textheight, % Height of the header
+	headershape=roundedright, % Specify the rounded corner in the content box headers, can be: rectangle, small-rounded, roundedright, roundedleft or rounded
+	headerfont=\Large\bf\textsc, % Large, bold and sans serif font in the headers of content boxes
+	%textfont={\setlength{\parindent}{1.5em}}, % Uncomment for paragraph indentation
+	linewidth=2pt % Width of the border lines around content boxes
+}
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION 
+%----------------------------------------------------------------------------------------
+%
+{\includegraphics[height=3.9cm]{FloridaTechNewLogo.png}} % First university/lab logo on the left
+{\bf\textsc{\Huge{YOUR TITLE HERE}}} % Poster title
+{\LARGE{\textsc{\underline{Presenter}, Second Author, ..., On behalf of the CMS Muon Group\\ Florida Institute of Technology}}\\
+
+\textsc{\textbf{\textcolor{FTRed}{\Large{CONFERENCE NAME \& YEAR}}}}
+} % Author names and institution
+{\includegraphics[height=2.5cm]{CMS_logo_May2014.pdf}} % Second university/lab logo on the right
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	                                     INTRODUCTION 									  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\headerbox{Introduction}{name=objectives, column=0, row=0, span=2}{
+\begin{multicols}{2}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Ultrices vitae auctor eu augue ut lectus arcu bibendum. Urna duis convallis convallis tellus id interdum velit laoreet id. Senectus et netus et malesuada fames ac turpis. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. Sit amet tellus cras adipiscing enim eu turpis. Consectetur lorem donec massa sapien faucibus et molestie ac feugiat. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Adipiscing commodo elit at imperdiet dui accumsan sit. Vitae et leo duis ut diam. Varius sit amet mattis vulputate. Enim lobortis scelerisque fermentum dui faucibus in. Vitae et leo duis ut diam quam nulla. Quisque egestas diam in arcu cursus. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Porta nibh venenatis cras sed. Cursus eget nunc scelerisque viverra mauris in.
+
+
+\begin{center}
+\includegraphics[width=0.15\textwidth]{CMS_logo_May2014.pdf}
+\captionof{figure}{Sample figure.}
+\end{center}
+Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Est pellentesque elit ullamcorper dignissim. Et malesuada fames ac turpis egestas integer eget. 
+
+\end{multicols}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	                                       BACKGROUND 									  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\headerbox{Background information}{name=background, column=0, row=3, span=2, below=objectives}{ % This block's bottom aligns with the bottom of the conclusion block
+% use ,bottomaligned=conclusion to align with conclusion block bottomaligned=acknowledgements
+\begin{multicols}{2}
+Integer feugiat scelerisque varius morbi enim nunc. Viverra vitae congue eu consequat. Dui accumsan sit amet nulla facilisi. Vitae auctor eu augue ut lectus arcu bibendum. Auctor augue mauris augue neque gravida in fermentum. Accumsan lacus vel facilisis volutpat. Semper eget duis at tellus at. Tincidunt nunc pulvinar sapien et ligula ullamcorper. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Maecenas pharetra convallis posuere morbi leo. At quis risus sed vulputate odio ut. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Lorem ipsum dolor sit amet. Aliquam nulla facilisi cras fermentum odio. Ac tortor dignissim convallis aenean et tortor. Ultricies mi quis hendrerit dolor magna eget est lorem. A cras semper auctor neque vitae tempus. Euismod lacinia at quis risus sed vulputate odio ut enim. Commodo odio aenean sed adipiscing diam donec. 
+\vspace{-0.2cm}
+
+%\vspace{1.4cm}
+\begin{center}
+\includegraphics[width=0.44\linewidth]{CMS_logo_May2014.pdf}\hspace{0.1cm}\includegraphics[width=0.44\linewidth]{CMS_logo_May2014.pdf}\\
+\captionof{figure}{Sample double column figure.}
+\end{center}
+
+\end{multicols}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	                                         METHODS 									  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\headerbox{Methods}{name=frontend, column=0, row=4, span=2, below=background}{ 
+\begin{multicols}{2}
+\begin{center}
+\includegraphics[width=0.55\linewidth]{FloridaTechNewLogo.png}
+\captionof{figure}{Another sample figure.}
+\end{center}
+Adipiscing elit ut aliquam purus sit amet luctus venenatis. Cras adipiscing enim eu turpis egestas. Morbi tristique senectus et netus et. Nisl nisi scelerisque eu ultrices vitae auctor. Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum.
+Nunc lobortis mattis aliquam faucibus purus in massa. Mattis rhoncus urna neque viverra justo nec. At quis risus sed vulputate odio. Eu turpis egestas pretium aenean. Integer malesuada nunc vel risus commodo viverra maecenas accumsan. Ornare suspendisse sed nisi lacus sed viverra. Auctor urna nunc id cursus metus. Odio euismod lacinia at quis risus sed vulputate. Leo integer malesuada nunc vel risus commodo viverra. Eu facilisis sed odio morbi. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Nibh tellus molestie nunc non blandit massa enim. Risus at ultrices mi tempus. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Odio facilisis mauris sit amet massa vitae. Lacus suspendisse faucibus interdum posuere. Egestas sed tempus urna et pharetra pharetra. Morbi quis commodo odio aenean sed adipiscing diam. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel.
+
+\begin{wrapfigure}{r}{0.5\linewidth}
+\begin{center}
+\includegraphics[width=0.6\linewidth]{CMS_logo_May2014.pdf}
+\captionof{figure}{Figure with wrapped text.}
+\end{center}
+\end{wrapfigure}
+
+Suspendisse in est ante in nibh mauris cursus. Quis varius quam quisque id diam vel quam elementum pulvinar. Quam vulputate dignissim suspendisse in est ante in. Nulla facilisi cras fermentum odio eu feugiat pretium. Auctor urna nunc id cursus metus aliquam eleifend mi. Bibendum at varius vel pharetra vel turpis nunc. Arcu bibendum at varius vel pharetra vel. Suspendisse potenti nullam ac tortor vitae purus faucibus. Mi eget mauris pharetra et ultrices neque. Enim lobortis scelerisque fermentum dui faucibus in. Faucibus pulvinar elementum integer enim. Risus feugiat in ante metus dictum. Vitae elementum curabitur vitae nunc sed.
+
+\end{multicols}
+Ac turpis egestas sed tempus urna et pharetra pharetra. At lectus urna duis convallis. Mi sit amet mauris commodo quis. Turpis egestas maecenas pharetra convallis posuere morbi. Enim neque volutpat ac tincidunt vitae semper quis lectus. Varius vel pharetra vel turpis nunc eget lorem. Nibh praesent tristique magna sit. In tellus integer feugiat scelerisque. Id leo in vitae turpis massa sed elementum tempus. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Non blandit massa enim nec dui nunc mattis enim. Molestie a iaculis at erat pellentesque. Pellentesque id nibh tortor id. Adipiscing tristique risus nec feugiat in fermentum posuere. Felis eget velit aliquet sagittis id consectetur purus. Sagittis vitae et leo duis ut diam. Sed pulvinar proin gravida hendrerit. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Vel orci porta non pulvinar neque laoreet.
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	                                         RESULTS 									  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-
+
+\headerbox{Results}{name=results, row=0, column=2,span=2}{ 
+
+Arcu cursus vitae congue mauris rhoncus aenean vel elit. Pulvinar etiam non quam lacus suspendisse faucibus interdum. Facilisis mauris sit amet massa vitae tortor condimentum. Non consectetur a erat nam. Dignissim enim sit amet venenatis urna cursus eget nunc. Sollicitudin nibh sit amet commodo nulla facilisi nullam. Mi ipsum faucibus vitae aliquet. Diam ut venenatis tellus in metus. 
+
+\vspace{-0.2cm}
+\begin{center}  
+\captionof{table}{Sample Table}
+\resizebox{0.5\textwidth}{!}{   % USE RESIZEBOX TO SHRINK TABLE TO FIT WITHIN MARGINS
+\vspace{-0.1cm}
+\begin{tabular}{ccccccc}
+\hline
+Header 0 	& Description 0	& Header 2		& Header 3 		 	& $\pi$ & $\phi$ 	& $\hbar$\\
+\hline
+0 			& Description 1	& First value	& 0 				& 3		& 1			& 6\\
+1 			& Description 2	& Second value	& 1 				& 1		& 6			& 5\\
+2 			& Description 3	& Third value	& 1 				& 4		& 1			& 8\\
+3 			& Description 4	& Fourth value	& 2 				& 1		& 8			& 2\\
+4 			& Description 5	& Fifth value	& 3 				& 5		& 0			& 1\\
+5			& Description 6	& Sixth value  	& 5 				& 9		& 3			& 2\\
+\hline
+\end{tabular}}
+\end{center}
+
+\begin{multicols}{2}
+
+
+\begin{wrapfigure}{l}{0.55\linewidth}
+\hspace{0.4cm}\includegraphics[width=0.82\linewidth]{CMS_logo_May2014.pdf}
+\captionof{figure}{Another figure with wrapped text.}
+\end{wrapfigure}
+Lobortis feugiat vivamus at augue. Risus quis varius quam quisque id diam. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Nunc pulvinar sapien et ligula. Eu scelerisque felis imperdiet proin fermentum. Non blandit massa enim nec. Ac tortor dignissim convallis aenean et. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra. Massa ultricies mi quis hendrerit dolor magna eget est. Bibendum arcu vitae elementum curabitur vitae nunc sed. Luctus venenatis lectus magna fringilla. Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Nunc lobortis mattis aliquam faucibus purus in massa tempor nec. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant.
+\vspace{0.2cm}
+
+Nibh venenatis cras sed felis eget velit aliquet sagittis. Nibh sit amet commodo nulla facilisi nullam. Pretium lectus quam id leo in vitae turpis massa. Libero volutpat sed cras ornare arcu dui. Commodo nulla facilisi nullam vehicula. Feugiat in ante metus dictum at. Mauris vitae ultricies leo integer malesuada nunc vel risus.
+\vspace*{-0.1cm}
+\begin{align}
+(i\slashed{\partial} - m)\psi = 0
+\end{align}
+
+Vivamus at augue eget arcu. Sed egestas egestas fringilla phasellus faucibus scelerisque. Lectus urna duis convallis convallis tellus id interdum. Ullamcorper eget nulla facilisi etiam dignissim diam quis. At imperdiet dui accumsan sit amet nulla facilisi morbi. Bibendum at varius vel pharetra vel. Nibh tellus molestie nunc non. Diam sit amet nisl suscipit. Eros in cursus turpis massa tincidunt dui ut. Massa id neque aliquam vestibulum. Amet nisl purus in mollis nunc sed id semper risus. Vitae purus faucibus ornare suspendisse sed. Quis hendrerit dolor magna eget. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Tellus cras adipiscing enim eu turpis egestas pretium aenean. Platea dictumst vestibulum rhoncus est. Urna et pharetra pharetra massa massa ultricies. Feugiat scelerisque varius morbi enim nunc. Id semper risus in hendrerit gravida rutrum quisque non. Quam elementum pulvinar etiam non.%\vspace{-0.1cm}
+\begin{center}
+\includegraphics[width=0.42\linewidth]{CMS_logo_May2014.pdf}\includegraphics[width=0.42\linewidth]{CMS_logo_May2014.pdf}
+\captionof{figure}{Another double column figure.}
+\end{center}
+Congue eu consequat ac felis donec et odio pellentesque diam. Dignissim enim sit amet venenatis urna. Urna nec tincidunt praesent semper feugiat. Sed risus ultricies tristique nulla aliquet enim. Risus feugiat in ante metus dictum. Massa ultricies mi quis hendrerit dolor magna. Eu facilisis sed odio morbi quis commodo odio. At elementum eu facilisis sed. Vitae ultricies leo integer malesuada nunc. Porta lorem mollis aliquam ut porttitor leo. Vel fringilla est ullamcorper eget nulla facilisi. Arcu ac tortor dignissim convallis aenean. Ac placerat vestibulum lectus mauris ultrices eros. Maecenas ultricies mi eget mauris. Nibh venenatis cras sed felis eget velit aliquet sagittis. Sed adipiscing diam donec adipiscing tristique risus nec. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus.
+
+\end{multicols}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	                                   FUTURE WORK/PLANS 								  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\headerbox{Future work/Plans}{name=plans, column=2, row=3, span=2, below=results}{
+
+\begin{multicols}{2}
+Pretium lectus quam id leo. Porttitor lacus luctus accumsan tortor posuere ac ut. Tristique senectus et netus et malesuada fames ac turpis. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Urna neque viverra justo nec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. In massa tempor nec feugiat nisl pretium fusce id. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Velit euismod in pellentesque massa placerat duis. Tellus molestie nunc non blandit massa enim nec dui nunc. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere. Velit scelerisque in dictum non consectetur a erat. Malesuada proin libero nunc consequat interdum varius. Ornare arcu dui vivamus arcu felis bibendum ut tristique. Netus et malesuada fames ac turpis egestas maecenas pharetra convallis. Sed cras ornare arcu dui vivamus arcu. Volutpat est velit egestas dui id. Amet cursus sit amet dictum sit amet justo donec enim.
+\end{multicols}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	                                   ACKNOWLEDGEMENTS  								  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\headerbox{Acknowledgements}{name=acknowledgements,column=2, span = 1,below=plans}{
+Porta non pulvinar neque laoreet suspendisse interdum consectetur. Id interdum velit laoreet id donec ultrices tincidunt arcu non. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Diam maecenas ultricies mi eget mauris pharetra et. Posuere morbi leo urna molestie at elementum eu facilisis. Enim lobortis scelerisque fermentum dui faucibus in ornare. 
+\vspace*{0.15cm}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	                                      REFERENCES 									  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\headerbox{References}{name=results2, column=3, span=1,below=plans, bottomaligned=acknowledgements}{ 
+\vspace{-0.2cm}
+
+\renewcommand{\section}[2]{\vskip 0.05em} % Get rid of the default "References" section title
+
+\small{                                   % Reduce the font size in this block
+\bibliographystyle{unsrt}
+\begin{thebibliography}{9}
+\itemsep-0.2em
+\bibitem{ref0} Author/Collaboration, \textit{Report Title}, \href{}{Report number}, Sep. 12, 2017.
+\bibitem{ref1} Author list, "Journal publication title," Volume(Number), \href{}{doi:doihere}, \href{}{arXiv:arxividentifierhere}.
+
+\end{thebibliography}}
+}
+
+\end{poster}
+
+\end{document}
