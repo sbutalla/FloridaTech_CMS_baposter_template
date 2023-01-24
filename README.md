@@ -1,6 +1,8 @@
 # Florida Tech/CMS `baposter` LaTeX template
 The original baposter class (Version 1) was created by Brian Amberg (baposter@brian-amberg.de). LaTeX template for a conference poster
-presentation made by Stephen D. Butalla (Version 0, 2021/10/03). If you want modify and/or distribute the class/template,
+presentation with Florida Tech and CMS Collaboration affiliation made by Stephen D. Butalla (stephen.butalla@cern.ch). Version 0, 2021/10/03.
+
+If you want modify and/or distribute the class/template,
 please refer to the [CC BY-NC-SA 3.0 license](http://creativecommons.org/licenses/by-nc-sa/3.0/).
 
 # Quick TeX formatting tips
