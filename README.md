@@ -53,8 +53,8 @@ and `l`for placing the figure on the left (with text on the left)]. The second a
 For multiple columns inside of the poster section, use the `multicols` environment, e.g.,
 
 ```
-\begin{multicols}{X}
+\begin{multicols}{X}{width}
 
 \end{multicols}
 ```
-where `X` is the number of columns.
+where `X` is the number of columns and `width` is the number of columns (e.g., `0.5\linewidth` for two columns, `0.33\linewidth` for three columns, etc.).
